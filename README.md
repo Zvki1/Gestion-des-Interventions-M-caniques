@@ -71,3 +71,7 @@ Une classe Application contenant un point d'entrée "main" a été ajoutée pour
 Une interface graphique et un menu textuel dans la console a été implémenté pour déclencher les différentes actions.
 
 N'hésitez pas à explorer le code source et à contribuer à l'amélioration de cette application de gestion des interventions mécaniques. Merci de votre intérêt !
+
+## Demo 
+<img width="695" alt="image" src="https://github.com/Zvki1/Gestion-des-Interventions-M-caniques/assets/98493579/df8bd597-7e80-4c06-a892-785819da28c6">
+
