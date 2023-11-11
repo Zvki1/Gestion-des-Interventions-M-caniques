@@ -75,3 +75,7 @@ N'hésitez pas à explorer le code source et à contribuer à l'amélioration de
 ## Demo 
 <img width="695" alt="image" src="https://github.com/Zvki1/Gestion-des-Interventions-M-caniques/assets/98493579/df8bd597-7e80-4c06-a892-785819da28c6">
 
+<img width="601" alt="image" src="https://github.com/Zvki1/Gestion-des-Interventions-M-caniques/assets/98493579/268c350a-43e4-469e-8bd3-a355490eaf3c">
+
+<img width="822" alt="image" src="https://github.com/Zvki1/Gestion-des-Interventions-M-caniques/assets/98493579/9a51e08b-38c5-42cb-9c3d-d2d5384f59bf">
+
