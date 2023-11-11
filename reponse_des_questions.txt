@@ -1,0 +1,83 @@
+Partie I : Conception et Modélisation
+
+--Classe Intervention :
+		Attributs : numéro unique, type, date de début, date de fin, coût,numéro d'immatriculation
+		Relations : référence à un véhicule, référence à un employe (Chaque intervention est effectuée par un employé)(Chaque intervention concerne un véhicule)
+	
+--Classe Intervenant :
+		Attributs : numéro d'employé, numéro d'intervention, date de début, date de fin
+		Relations : référence à  intervention
+	
+--Classe Employe :
+		Attributs : numéro unique, nom, prénom, catégorie, salaire
+		Relations : référence à un intervenant
+		
+--Classe "Véhicule":
+		Attributs : numéro d'immatriculation, modèle, année de première mise en circulation,numéro du client
+		Relations : référence un client,référence un modele (Chaque véhicule appartient à un client)(Chaque véhicule a un modèle)
+ 
+ --Classe "Modèle":
+		Attributs : numéro, nom de modèle, numero de la marque
+		Relations : référence une marque(Chaque modèle appartient à une marque)
+		
+--Classe "Client":
+		Attributs : numéro, nom, prénom, civilité, date de naissance, adresse, numéro de téléphone personnel, numéro de téléphone professionnel (optionnel), fax (optionnel)
+		Relations : possède un ou plusieurs véhicules
+		enumeration:prend les valeur  {’M, ’Mle’, ‘Mme’}.
+		
+-- 2 Ajout de l'attribut "date d'installation" dans l'entité "Employé":
+
+		L'ajout de l'attribut "date d'installation" dans l'entité "Employé" permet de stocker la date à laquelle l'employé a été installé dans l'atelier de réparation. 
+		Cette information peut être utile pour des rapports ou des calculs basés sur la durée d'emploi de l'employé. 
+		Les conséquences de cette action sont la modification du schéma de la base de données, l'ajustement des méthodes de création et de modification des employés,
+		ainsi que la mise à jour des formulaires ou des vues associées à l'entité "Employé".
+		 
+-- 3 Attributs "catégorie" et "salaire" non nuls dans l'entité "Employé":
+
+Pour garantir que les attributs "catégorie" et "salaire" de l'entité "Employé" soient non nuls, il faut définir ces attributs comme obligatoires lors de la création d'un nouvel employé. 
+		Cela peut être réalisé en utilisant des contraintes de validation au niveau du code ou du schéma de la base de données. 
+		Par exemple, en utilisant des règles de validation lors de la saisie des données ou en définissant des contraintes de non-nullité au niveau de la colonne correspondante dans la base de données. 
+ou en impliquant des constructeurs avec parametres ou il faut passer les valeurs de <categorie> et <salaire> comme parametres et verifier les valeur de <salaire> et <categorie> si ==NULL elle refuse l'insertion  .
+		
+-- 4 Contrôle de la validité de la période d'intervention :
+
+		Le contrôle de la validité de la période d'intervention, c'est-à-dire que la date de début doit être inférieure à la date de fin, peut être effectué au niveau du code lors de la création ou de la modification d'une intervention. 
+		Avant la creation de l'objet , on peut vérifier si la date de début est inférieure à la date de fin. Si cette condition n'est pas satisfaite, 
+		une erreur peut être générée pour indiquer que la période d'intervention n'est pas valide.
+
+
+-- 5 Méthodes et/ou attributs supplémentaires pour les actions demandées :
+
+		a. Pour créer et instancier les objets correspondants à l'échantillon de données fourni, il est nécessaire d'ajouter des constructeurs  dans les classes concernées et la redifinition de toString .
+	 	Par exemple, une méthode "creerIntervention" dans la classe "Intervention" pour créer de nouvelles interventions.
+
+		b. Pour augmenter le salaire de Badi Hatem de 5000 da, on utilise les getnomemploye pour acceder a le nom et le prenom pour et setsalaire pour le modifier 
+		
+		c. Pour rajouter cinq jours aux interventions du mois de Février,on utilise les getters de la classe interventions et datep
+		
+		d. Pour supprimer tous les véhicules du modèle "Série 5",on utilise getters de la classe modele et on modifie la arraylist de vehicules  
+		Cette action aura pour conséquence la suppression des données de ces véhicules 
+		
+		e. Pour lister les modèles et leur marque, on utilise des getters pour marque et modele  
+	
+		f-getters de la classe interventions et vehicules 
+
+		g-on utilise getnom de la classe employe et charat la methode predefini pour preciser l'indice de lettre a rechercher (debut )
+
+		h- les getters de les classe intervention et intervenant
+
+		i-getDATEDEBINTERV de la classe intervention getMois de la classe Datep pour recuperer le mois mars  le redifinition de toString pour afficher intervention avec sout 
+
+
+
+update 
+fixer le beug de la deuxieme question (deja transmis)
+modification de la 3eme case ou on peut supprimer plusieurs vehicules ( transmis)
+affichage des vehicules qui on fait une intervention par numvehicule et par modele (transmis )
+6- ajout de uppercase dans la comparaison (transmis)
+7- yavait une unvetion entre numinterv et numemp
+
+
+
+
+

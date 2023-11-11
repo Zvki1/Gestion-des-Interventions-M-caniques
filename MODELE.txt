@@ -1,0 +1,27 @@
+2,1,Diablo
+3,2,Serie 5
+4,10,NSX
+5,14,Classe C
+6,17,Safrane
+7,20,400 GT
+8,12,Esprit
+9,15,605
+10,19,Previa
+11,7,550 Maranello
+12,3,Bentley-Continental
+13,10,Spider
+14,13,Evoluzione
+15,16,Carrera
+16,16,Boxter
+17,21,S 80
+18,6,300 M
+19,4,M 3
+20,9,XJ 8
+21,15,406 Coupe
+22,20,300 Atlantic
+23,14,Classe E
+24,11,GS 300
+25,5,Seville
+26,18,95 Cabriolet
+27,2,TT Coupe
+28,7,F 355
